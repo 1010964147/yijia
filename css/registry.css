@@ -1,0 +1,101 @@
+.main {
+	width: 1200px;
+	background-color: #f9f9f9;
+	margin: 0 auto;
+}
+
+
+.login_box{
+    height: 556px;
+	background: #f9f9f9;
+}
+.login_cont{
+    width: 312px;
+    height: 408px;
+    text-align: center;
+}
+
+.login_cont h1{
+    padding-top: 60px;
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+.login_txt input, .login_pass input, .login_phone input{
+    border: 1px solid #b9b9b9;
+    padding-left: 16px;
+    margin-top: 12px;
+    width: 292px;
+    height: 38px;
+    font-size: 14px;
+}
+.verify_txt, .verify_pass, .verify_phone{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+.verify{
+    margin-top: 20px;
+    width: 310px;
+	height: 36px;
+	display: block;
+    background: #e8e8e8;
+    position: relative;
+    text-align: center;
+    line-height: 36px;
+}
+.verify .verify_box{
+    position: absolute;
+    background: #ffffff;
+    width: 40px;
+    height: 35px;
+    border: solid 1px #cccccc;
+    cursor: pointer;
+}
+.verify p{
+    font-size: 14px;
+    color: #747474;
+}
+.login_on{
+    color: #ffffff;
+    margin-top: 20px;
+    width: 312px;
+    height: 40px;
+    border: none;
+    background: #eb0028;
+    cursor: pointer;
+}
+.login_p{
+    font-size: 12px;
+    color: #666666;
+    margin: 24px 0;
+}
+.login_icon .icon-xinlang{
+    font-size: 50px;
+    color: #ea0027;
+    padding: 5px;
+}
+.login_icon .icon-qq1{
+    font-size: 38px;
+    color: #12b7f5;
+    padding: 5px;
+}
+.login_icon .icon-weixin{
+    font-size: 54px;
+    color: #1aad19;
+    padding: 5px;
+}
+.login_log span a{
+    line-height: 14px;
+    display: inline-block;
+    margin-top: 36px;
+    font-size: 14px;
+    color: #0099cc;
+    border-left: 1px solid #0099cc;
+    padding: 0 5px;
+}
+.login_log .login_ss{
+    border: none;
+}
+
+

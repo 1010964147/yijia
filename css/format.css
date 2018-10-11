@@ -1,0 +1,10 @@
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,img,tr,td,input,textarea{padding:0;margin:0;}
+body{font-size:12px;font-family: "微软雅黑";}
+a{text-decoration:none;color:#333;}
+img{border:0; display:block;}
+ul li,ol li{list-style:none;}
+.clearfix:after{content:"";font-size:0;display:block;height:0;clear:both;overflow:hidden;visibility:hidden;}
+.fl{float:left;}
+.fr{float:right;}
+input{outline: none;}
+textarea{resize: none;}

@@ -1,0 +1,79 @@
+.subject2{
+    height:236.8px;
+    width:100%;
+}
+.subject2 ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.subject2 ul li{
+    flex:1;
+    width: 33.3333%;
+    height:236.8px;
+}
+.subject2 ul li img{
+    width:100%;
+    height:100%;
+    display: block;
+}
+.subject2 ul li h4{
+    position: absolute;
+    font-weight: 400;
+    font-size: 24px;
+    top:20%;
+}
+
+.subject3{
+    width:100%;
+    height:480px;
+    background: url(../img/8070f60cb10b64a0bcf03d98242947ca.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.subject3 .subject3-center{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -70px;
+    text-align: center;
+    font-size: 100%;
+    color: #fff;
+}
+.subject3 .subject3-center .h3{
+    line-height: 1.2;
+    font-size: 48px;
+}
+.subject3 .subject3-center p{
+    position: absolute;
+    display: inline-block;
+    background: #fff;
+    width:0;
+    left:555px;
+    z-index: 0;
+    transition: all .15s ease 0s;
+}
+
+.subject3 .subject3-center .btn{
+    border: 1px solid #fff;
+    width: 130px;
+    height: 40px;
+    background: 0 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    transition: all .15s ease 0s;
+    position: relative;
+    z-index: 1;
+}
+.subject3 .subject3-center p:hover .btn{
+    color: black;
+}
+
+.subject3 .subject3-center p:hover{
+    width:130px;
+}
+
+
+
