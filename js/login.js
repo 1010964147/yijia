@@ -36,7 +36,6 @@ var login = (function(){
                 // 每次发送请求时,都携带这个token值,后台才能确定当前用户登录成功,才会返回数据
                 document.cookie = "token=" + data.data.token;
                 document.cookie = "user-id=" + data.data.id;
-                
                 location.href = 'homepage.html';
             } else {
                 alert(data.msg);

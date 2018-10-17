@@ -5,12 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>首页</title>
+	<title>购物车</title>
 	<link rel="stylesheet" href="css/format.css">
 	<link rel="stylesheet" href="css/public.css">
-	<link rel="stylesheet" href="css/homepage.css">
+	<link rel="stylesheet" href="css/shopping-cart.css">
 	<link rel="stylesheet" href="//at.alicdn.com/t/font_669785_7lx6dtuazll.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/css/swiper.min.css">
 </head>
 
 <body>
@@ -79,129 +78,192 @@
 	</header>
 
 
-	<div class="subject">
-		<div class="subject1">
-			<div class="swiper-container subject1-center">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide subject1-center-1">
-						<div class="state" style="left:65%;">
-							<h2>
-								<span class="title1">一加云耳</span><br>
-								<span class="title2">静享佳音</span>
-							</h2>
-							<h4 class="title3">￥399起</h4>
-							<a href="show.html" class="a1"><span>立即购买</span></a>
-							<a href="show.html" class="a2">了解更多</a>
+	<div class="content">
+		<div class="main-c">
+			<div class="main-flow">
+				<div class="flow-line">
+					<span class="flow-name flow-point-1 is-on">购物车</span>
+					<span class="flow-name flow-point-2">填写订单</span>
+					<span class="flow-name flow-point-3">完成支付</span>
+					<div class="flow-red-line flow-step-1"></div>
+					<span class="flow-circular flow-point-1 active"></span>
+					<span class="flow-circular flow-point-2"></span>
+					<span class="flow-circular flow-point-3"></span>
+				</div>
+			</div>
+			<div class="m-my-cart-head">
+				<em>我的购物车</em>
+				<span>全场满99免运费</span>
+			</div>
+		</div>
+		<div class="main-c">
+			<div class="goods-list">
+				<ul class="goods-list-box">
+					<li class="list-head">
+						<ul class="head-caption">
+							<li>
+								<span>商品</span>
+							</li>
+							<li>价格</li>
+							<li>数量</li>
+							<li class="total-price">小计</li>
+							<li>操作</li>
+						</ul>
+					</li>
+					<li class="list-body">
+						<div class="main-goods">
+							<!-- <ul class="cart-product">
+								<li>
+									<a href="show.html">
+										<img class="goods-img" src="img/ade212415cfcdb3eb63cafb484f639d5.png">
+									</a>
+									<span class="name-info">
+										<span>
+											<a href="show.html">一加云耳-耳机-黑色</a>
+										</span>
+									</span>
+								</li>
+								<li class="price">
+									<div>
+										<p>¥ 399.00</p>
+
+									</div>
+								</li>
+								<li class="goods-number">
+									<span class="goods-num">
+										<span class="goods-minus disabled">
+											<span></span>
+										</span>
+										<span class="span1">1</span>
+										<span class="goods-plus ">
+											<span></span>
+											<span></span>
+										</span>
+									</span>
+								</li>
+								<li class="total-price">¥ 399.00</li>
+								<li class="delete-goods">
+									<span class="delete-btn"></span>
+								</li>
+							</ul> -->
 						</div>
-					</div>
-					<div class="swiper-slide subject1-center-2">
-						<div class="state">
-							<h2>
-								<span class="title1">OnePlus 6</span><br>
-								<span class="title2">全速旗舰</span>
-							</h2>
-							<h4 class="title3">￥3199起</h4>
-							<a href="show.html" class="a1"><span>立即购买</span></a>
-							<a href="show.html" class="a2">了解更多</a>
+					</li>
+					<li class="empty-box">
+						<i class="i-big-cart"></i>
+						<div class="tip">
+							<p>您的购物车里没有商品！</p>
+							<a href="show.html">去购物</a>
+						</div>
+					</li>
+				</ul>
+				<div class="total-panel">
+					<div class="total-list">
+						<div class="total-content">
+							<p class="freight-tip">
+								已选择
+								<span class="total-goods-num">0</span> 件商品
+							</p>
+							<dl>
+								<dt>购物车商品小计</dt>
+								<dd class="all-price">¥ 0.00</dd>
+								<dt>运费</dt>
+								<dd>¥ 0</dd>
+							</dl>
+							<dl class="amount-to">
+								<dt>总价</dt>
+								<dd class="amount-price">¥ 0.00</dd>
+							</dl>
+						</div>
+						<div class="checkout-btn-bar">
+							<a class="go-store-btn" href="show.html">继续购物</a>
+							<a href="#">
+								<span id="goOrderBtn">去结算</span>
+							</a>
 						</div>
 					</div>
 				</div>
-				<div class="swiper-pagination"></div>
-				<div class="swiper-button-prev swiper-button-white" style="outline: none;left: 50px;"></div>
-				<div class="swiper-button-next swiper-button-white" style="outline: none;right: 50px;"></div>
 			</div>
-		</div>
-		<div class="subject2">
-			<ul>
-				<li>
-					<h4>以旧换新</h4>
-					<a href="#">
-						<img src="img/6966b85e5aa37e6d3e11d65d23e3bca4.jpg">
-					</a>
-				</li>
-				<li>
-					<h4>解密大作战</h4>
-					<a href="#">
-						<img src="img/6966b85e5aa37e6d3e11d65d23e3bca4.jpg">
-					</a>
-				</li>
-				<li>
-					<h4>推荐有礼</h4>
-					<a href="#">
-						<img src="img/04788510f69288329e75c754eff3fa00.jpg">
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="subject3">
-			<div class="subject3-center">
-				<div class="h3">Shot on OnePlus</div>
-				<p>
-					<button type="button" class="btn">我要参加</button>
-				</p>
-			</div>
-		</div>
-		<div class="subject4">
-			<div class="subject4-center">
+			<div class="service-bars">
 				<ul>
 					<li>
 						<a href="#">
-							<img src="img/d0f13b473e3b31b9a79c6cbfbe4f9f3b.jpg">
-							<div class="state">
-								<h4>博客</h4>
-								<p>OnePlus 6T，以屏幕指纹触碰未来。</p>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="img/21a8408833412fa5bce4afe75bc9e9b6.jpeg">
-							<div class="state">
-								<h4>博客</h4>
-								<p>OnePlus 6T，以屏幕指纹触碰未来。</p>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="img/515fa4ad6b54d1a33c1ec61ca2166941.jpg">
-							<div class="state">
-								<h4>博客</h4>
-								<p>OnePlus 6T，以屏幕指纹触碰未来。</p>
-							</div>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="subject5">
-			<div class="subject5-center">
-				<ul>
-					<li>
-						<a href="#">
-							<i class="i-7"></i>
+							<i class="i-7d-return"></i>
 							<span>7天无理由退货</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<i class="i-15"></i>
+							<i class="i-15d-return"></i>
 							<span>15天退货保障</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<i class="i-30"></i>
+							<i class="i-30d-swap"></i>
 							<span>30天换货保障</span>
 						</a>
 					</li>
-					<li>
-						<a href="#">
-							<i class="i-99"></i>
-							<span>99元全场包邮</span>
-						</a>
-					</li>
+					<!--<li>-->
+						<!--<a href="#">-->
+							<!--<i class="i-free-send"></i>-->
+							<!--<span>99元全场包邮</span>-->
+						<!--</a>-->
+					<!--</li>-->
 				</ul>
+			</div>
+		</div>
+
+		<div class="like-goods">
+			<p class="like-title">你可能喜欢</p>
+			<div class="like-goods-list">
+				<div class="like-goods-box">
+					<div class="bx-wrapper">
+						<div class="bx-viewport">
+							<ul>
+								<li>
+									<a href="show.html">
+										<img class="goods-img" src="img/9f350e2d523c068d94978589779b0038_200_200.png">
+									</a>
+									<div class="name-price">
+										<p class="goods-name">OnePlus 6 个性保护壳 砂岩黑</p>
+										<p class="goods-price">¥99.00</p>
+									</div>
+									<div class="add-to-cart"><span>加入购物车</span></div>
+								</li>
+								<li>
+									<a href="show.html">
+										<img class="goods-img" src="img/9f350e2d523c068d94978589779b0038_200_200.png">
+									</a>
+									<div class="name-price">
+										<p class="goods-name">OnePlus 6 个性保护壳 砂岩黑</p>
+										<p class="goods-price">¥99.00</p>
+									</div>
+									<div class="add-to-cart"><span>加入购物车</span></div>
+								</li>
+								<li>
+									<a href="show.html">
+										<img class="goods-img" src="img/9f350e2d523c068d94978589779b0038_200_200.png">
+									</a>
+									<div class="name-price">
+										<p class="goods-name">OnePlus 6 个性保护壳 砂岩黑</p>
+										<p class="goods-price">¥99.00</p>
+									</div>
+									<div class="add-to-cart"><span>加入购物车</span></div>
+								</li>
+								<li>
+									<a href="show.html">
+										<img class="goods-img" src="img/9f350e2d523c068d94978589779b0038_200_200.png">
+									</a>
+									<div class="name-price">
+										<p class="goods-name">OnePlus 6 个性保护壳 砂岩黑</p>
+										<p class="goods-price">¥99.00</p>
+									</div>
+									<div class="add-to-cart"><span>加入购物车</span></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -354,26 +416,35 @@
 		</div>
 	</footer>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/js/swiper.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/shop.js"></script>
 <script>
-	var mySwiper = new Swiper('.swiper-container', {
-		autoplay: {
-			disableOnInteraction: false,
-		},
-		loop : true,
-		effect: 'fade',
-		fadeEffect: {
-			crossFade: true,
-		},
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			clickable :true,
-		},
-	})
+	// $(".add-to-cart").on("click", function(){
+	// 	index_js.init()
+	// });
+	$('.total-goods-num').html(
+		$('.span1').html()
+	);
+	$('.all-price').html(
+		$('.main-goods .total-price').html()
+	);
+	$('.amount-price').html(
+		$('.all-price').html()
+	);
+	$(".delete-btn").on("click", function(){
+		window.location.reload();
+	});
+	if($('.list-body ul').length==0){
+		$(".list-body").css("display","none");
+		$(".total-panel").css("display","none");
+		$(".empty-box").css("display","block");
+		$(".like-goods").css("display","none");
+	}else{
+		$(".list-body").css("display","block");
+		$(".total-panel").css("display","block");
+		$(".empty-box").css("display","none");
+		$(".like-goods").css("display","block");
+	}
+	
 </script>
-
 </html>

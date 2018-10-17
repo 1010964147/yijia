@@ -1,0 +1,516 @@
+.content {
+    width: 100%;
+    background-color: #efefef;
+}
+.main-c {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+.main-flow {
+    padding: 50px 0;
+    width: 1000px;
+    margin: auto;
+}
+.main-c .m-my-cart-head {
+    padding: 20px 0 20px 10px;
+    border-bottom: 1px solid #dfdfdf;
+    color: #333;
+}
+.main-flow .flow-line {
+    position: relative;
+    height: 40px;
+    border-bottom: 2px solid #ccc;
+}
+.main-flow .flow-name {
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    width: 80px;
+    margin-left: -40px;
+    text-align: center;
+    font-size: 14px;
+}
+.main-flow .is-on{
+    color: #eb0028;
+}
+.main-flow .flow-point-1 {
+    left: 25%;
+}
+.main-flow .flow-point-2 {
+    left: 50%;
+}
+.main-flow .flow-point-3 {
+    left: 75%;
+}
+.main-flow .flow-red-line {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: #eb0028;
+}
+.main-flow .flow-step-1 {
+    width: 37.5%;
+}
+.main-flow .flow-circular {
+    position: absolute;
+    bottom: -6px;
+    margin-left: -5px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #ccc;
+}
+.main-flow .active, .main-flow .actived {
+    background: #eb0028;
+}
+.main-c .m-my-cart-head em {
+    font-style: normal;
+    font-size: 16px;
+}
+.main-c .m-my-cart-head span {
+    font-size: 12px;
+    color: #999;
+}
+.goods-list .goods-list-box {
+    font-size: 14px;
+    width: 100%;
+}
+.goods-list .list-head {
+    color: #ccc;
+    height: 50px;
+    line-height: 50px;
+    background: #34373d;
+    font-size: 12px;
+    border-bottom: 1px solid #dfdfdf;
+    padding-left: 20.17544%;
+    padding-right: 4.16667%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.goods-list .head-caption li{
+    width: 18.9011%;
+    float: left;
+    text-align: center;
+}
+.goods-list .head-caption li:first-child{
+    width: 38.68132%;
+    text-align: left;
+}
+.goods-list .head-caption li:last-child{
+    width: 4.3956%;
+}
+.goods-list .head-caption span {
+    margin-left: -46.74221%;
+}
+.goods-list .list-body {
+    background: #fff;
+    position: relative;
+    height: 133px;
+}
+.goods-list .main-goods {
+    margin: 0 2.5%;
+    padding-left: 17.54386%;
+    padding-right: 1.75439%;
+    padding-bottom: 20px;
+    border-top: 1px solid #ddd;
+    position: relative;
+    color: #333;
+    height: 113px;
+}
+.goods-list .main-goods:first-child {
+    border-top: 0 none;
+}
+.goods-list .cart-product{
+    position: relative;
+    height: 100%;
+}
+.goods-list .cart-product li {
+    position: relative;
+    padding-top: 53px;
+    padding-bottom: 35px;
+    width: 18.9011%;
+    float: left;
+    text-align: center;
+}
+.goods-list .cart-product li:first-child{
+    width: 38.68132%;
+    text-align: left;
+    position: relative;
+}
+.goods-list .cart-product li:last-child{
+    width: 4.3956%;
+}
+.goods-list .cart-product .goods-img {
+    width: 100px;
+    position: absolute;
+    left: -52.40793%;
+    top: 20px;
+}
+.goods-list li:first-child .name-info {
+    display: inline-block;
+    font-size: 16px;
+    color: #212121;
+    padding-left: 20px;
+    line-height: 24px;
+}
+.goods-list p {
+    line-height: 1.6;
+}
+.goods-list .goods-num {
+    position: relative;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    width: 85px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    margin-top: -2px;
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+}
+.goods-list .goods-minus {
+    width: 24px;
+    height: 23px;
+    border: 1px solid #f9f9f9;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    border-right: none;
+}
+.disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.goods-list .goods-minus span{
+    position: absolute;
+    top: 11px;
+    left: 8px;
+    height: 2px;
+    width: 10px;
+    background: #ccc;
+}
+.goods-list .goods-plus {
+    width: 24px;
+    height: 23px;
+    border: 1px solid #f9f9f9;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border-left: none;
+}
+
+.goods-list .goods-plus span:first-child {
+    top: 7px;
+    left: 12px;
+    height: 10px;
+    width: 2px;
+}
+.goods-list .goods-plus span {
+    position: absolute;
+    top: 11px;
+    left: 8px;
+    height: 2px;
+    width: 10px;
+    background: #ccc;
+}
+.goods-list .goods-plus:hover,.goods-list .goods-minus:hover {
+    background: #e3e3e3;
+    border-color: #fff;
+}
+.goods-list .delete-btn {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/cart-icons-sbbe05c499c.png);
+    background-position: 0 -126px;
+    width: 16px;
+    height: 19px;
+    cursor: pointer;
+}
+.goods-list .delete-btn:hover {
+    background-position: 0 -107px;
+}
+.goods-list .total-panel {
+    padding: 10px 0 30px;
+    position: relative;
+    background: #fff;
+    border-top: 1px solid #dfdfdf;
+    height: 193px;
+}
+.goods-list .total-list {
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    margin-right: 4.16667%;
+    width: 410px;
+    height: 100%;
+}
+.goods-list .total-list .freight-tip {
+    color: #999;
+    position: absolute;
+    left: 0;
+    top: 17px;
+    font-size: 12px;
+    margin-left: 4.16667%;
+}
+.goods-list .total-list .freight-tip .total-goods-num {
+    font-size: 14px;
+    color: #333;
+}
+.goods-list .total-list dl {
+    line-height: 1.6;
+    height: 64px;
+}
+.goods-list .total-list dl dt {
+    width: 50%;
+    padding-top: 10px;
+    float: left;
+    color: #999;
+    font-size: 12px;
+    text-align: left;
+}
+.goods-list .total-list dl dd {
+    width: 50%;
+    padding-top: 10px;
+    float: right;
+    color: #333;
+    text-align: right;
+}
+.goods-list .total-list .amount-to {
+    border-top: 1px solid #dfdfdf;
+    margin-top: 10px;
+    height: 58px;
+}
+.goods-list .total-list .amount-to dt {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.goods-list .total-list .amount-to dd {
+    font-size: 30px;
+    vertical-align: bottom;
+}
+.goods-list .total-list .checkout-btn-bar {
+    clear: both;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.goods-list .total-list .go-store-btn {
+    display: inline-block;
+    width: 198px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    background: 0 0;
+    color: #333;
+    border: 1px solid #d6d6d6;
+    border-radius: 2px;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+.goods-list .total-list #goOrderBtn {
+    display: inline-block;
+    width: 198px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    background: #eb0028;
+    color: #fff;
+    border: 1px solid #d70226;
+    border-radius: 2px;
+    position: relative;
+    z-index: 1;
+    float: right;
+}
+.empty-box {
+    background: #fff;
+    text-align: center;
+    padding: 5% 0 6.66667%;
+}
+.empty-box .i-big-cart {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/cart-icons-sbbe05c499c.png);
+    background-position: 0 -235px;
+    height: 80px;
+    width: 80px;
+}
+.empty-box .tip {
+    margin-top: 30px;
+}
+.empty-box .tip p {
+    padding-bottom: 40px;
+    font-size: 14px;
+    color: #999;
+}
+.empty-box .tip a {
+    display: inline-block;
+    width: 198px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    background: 0 0;
+    color: #eb0028;
+    border: 1px solid #eb0028;
+    border-radius: 2px;
+    transition: color .15s ease 0s;
+    position: relative;
+    z-index: 1;
+}
+.empty-box .tip a:before{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 0;
+    height: 50px;
+    background: #eb0028;
+    border-radius: 2px;
+    content: "";
+    transition: width .15s ease 0s;
+    z-index: -1;
+}
+.empty-box .tip a:hover {
+    color: #fff;
+}
+.empty-box .tip a:hover:before {
+    width: 200px;
+}
+.service-bars {
+    text-align: center;
+    padding: 22px 0;
+    background: #f9f9f9;
+    font-size: 12px;
+}
+.service-bars li {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+}
+.service-bars a span {
+    display: block;
+    margin-top: 10px;
+    line-height: 24px;
+    font-size: 14px;
+}
+.service-bars i{
+    background-image: url(../img/639.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+}
+.service-bars .i-7d-return {
+    background-position: 0 -920px;
+}
+.service-bars .i-30d-swap {
+    background-position: 0 -800px;
+}
+.like-goods {
+    color: #3f3f3f;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 110px;
+}
+.like-goods .like-title {
+    font-size: 18px;
+    padding: 60px 0 40px;
+}
+.like-goods .like-goods-box {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+.like-goods .bx-wrapper {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.like-goods .bx-viewport{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 392px;
+}
+.like-goods .bx-viewport ul{
+    position: relative;
+}
+.like-goods .bx-viewport ul li{
+    position: relative;
+    text-align: center;
+    float: left;
+    background: #fff;
+    padding: 10px 0 30px;
+    width: 280px;
+    margin-right: 20px;
+}
+.like-goods .goods-img {
+    margin-top: 20px;
+    width: 70%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.like-goods .name-price {
+    padding: 20px 0;
+    font-size: 14px;
+}
+.like-goods .name-price .goods-name {
+    margin-bottom: 10px;
+}
+.like-goods .name-price .goods-price{
+    display: inline-block;
+    color: #79797b;
+}
+.like-goods .add-to-cart {
+    display: inline-block;
+    width: 195px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    background: 0 0;
+    color: #eb0028;
+    border: 1px solid #eb0028;
+    border-radius: 0;
+    transition: color .15s ease 0s;
+    position: relative;
+    z-index: 1;
+}
+.like-goods .add-to-cart:hover {
+    color: #fff;
+}
+.like-goods .add-to-cart:before {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 0;
+    height: 40px;
+    background: #eb0028;
+    border-radius: 0;
+    content: "";
+    transition: width .15s ease 0s;
+    z-index: -1;
+}
+.like-goods .add-to-cart:hover:before {
+    width: 197px;
+}
+
+
+
+
+
+

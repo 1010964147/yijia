@@ -6,6 +6,7 @@
 	max-width: 100%;
 	overflow: visible;
 }
+
 #header .nav {
 	position: relative;
 	text-align: center;
@@ -299,6 +300,24 @@
 	margin: auto;
 	max-width: 240px;
 }
+.one-button.btn-black:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    z-index: -1;
+    width: 0;
+    /* height: 100%; */
+    height: calc(100% + 2px);
+    transition: .25s;
+    background-color: #000;
+    border-radius: 2px;
+}
+.one-button.btn-black:hover:before{
+	/* width: 100%; */
+	width: calc(100% + 2px);
+}
 
 .one-button.btn-lg.frozen {
 	line-height: 50px;
@@ -334,7 +353,6 @@
 }
 
 .one-button.btn-black:hover {
-	background-color: #101920;
 	color: #fff;
 	
 }
