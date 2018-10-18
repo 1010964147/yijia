@@ -204,10 +204,10 @@
 						</a>
 					</li>
 					<!--<li>-->
-						<!--<a href="#">-->
-							<!--<i class="i-free-send"></i>-->
-							<!--<span>99元全场包邮</span>-->
-						<!--</a>-->
+					<!--<a href="#">-->
+					<!--<i class="i-free-send"></i>-->
+					<!--<span>99元全场包邮</span>-->
+					<!--</a>-->
 					<!--</li>-->
 				</ul>
 			</div>
@@ -228,7 +228,9 @@
 										<p class="goods-name">OnePlus 6 个性保护壳 砂岩黑</p>
 										<p class="goods-price">¥99.00</p>
 									</div>
-									<div class="add-to-cart"><span>加入购物车</span></div>
+									<div class="add-to-cart">
+										<span>加入购物车</span>
+									</div>
 								</li>
 								<li>
 									<a href="show.html">
@@ -238,7 +240,9 @@
 										<p class="goods-name">OnePlus 6 个性保护壳 砂岩黑</p>
 										<p class="goods-price">¥99.00</p>
 									</div>
-									<div class="add-to-cart"><span>加入购物车</span></div>
+									<div class="add-to-cart">
+										<span>加入购物车</span>
+									</div>
 								</li>
 								<li>
 									<a href="show.html">
@@ -248,7 +252,9 @@
 										<p class="goods-name">OnePlus 6 个性保护壳 砂岩黑</p>
 										<p class="goods-price">¥99.00</p>
 									</div>
-									<div class="add-to-cart"><span>加入购物车</span></div>
+									<div class="add-to-cart">
+										<span>加入购物车</span>
+									</div>
 								</li>
 								<li>
 									<a href="show.html">
@@ -258,7 +264,9 @@
 										<p class="goods-name">OnePlus 6 个性保护壳 砂岩黑</p>
 										<p class="goods-price">¥99.00</p>
 									</div>
-									<div class="add-to-cart"><span>加入购物车</span></div>
+									<div class="add-to-cart">
+										<span>加入购物车</span>
+									</div>
 								</li>
 							</ul>
 						</div>
@@ -419,9 +427,51 @@
 <script src="js/jquery.js"></script>
 <script src="js/shop.js"></script>
 <script>
-	// $(".add-to-cart").on("click", function(){
-	// 	index_js.init()
-	// });
+	var i = $('.span1').html();
+	$('.goods-plus').on('click', function () {
+		$('.span1').html(++i);
+		$('.cart-product .total-price i').html(
+			$('.price p i').html() * $('.span1').html()
+		)
+		$('.total-goods-num').html(
+			$('.span1').html()
+		);
+		$('.all-price').html(
+			$('.main-goods .total-price').html()
+		);
+		$('.amount-price').html(
+			$('.all-price').html()
+		);
+		if ($('.span1').html() > 1) {
+			$('.goods-minus').removeClass("disabled");
+		} else if ($('.span1').html() == 1) {
+			$('.goods-minus').addClass("disabled");
+		}
+		
+	})
+	$('.goods-minus').on('click', function () {
+		$('.span1').html(--i);
+		$('.cart-product .total-price i').html(
+			$('.price p i').html() * $('.span1').html()
+		)
+		$('.total-goods-num').html(
+			$('.span1').html()
+		);
+		$('.all-price').html(
+			$('.main-goods .total-price').html()
+		);
+		$('.amount-price').html(
+			$('.all-price').html()
+		);
+		if ($('.span1').html() > 1) {
+			$('.goods-minus').removeClass("disabled");
+		} else if ($('.span1').html() == 1) {
+			$('.goods-minus').addClass("disabled");
+		}
+	})
+
+
+
 	$('.total-goods-num').html(
 		$('.span1').html()
 	);
@@ -431,20 +481,21 @@
 	$('.amount-price').html(
 		$('.all-price').html()
 	);
-	$(".delete-btn").on("click", function(){
+	$(".delete-btn").on("click", function () {
 		window.location.reload();
 	});
-	if($('.list-body ul').length==0){
-		$(".list-body").css("display","none");
-		$(".total-panel").css("display","none");
-		$(".empty-box").css("display","block");
-		$(".like-goods").css("display","none");
-	}else{
-		$(".list-body").css("display","block");
-		$(".total-panel").css("display","block");
-		$(".empty-box").css("display","none");
-		$(".like-goods").css("display","block");
+	if ($('.list-body ul').length == 0) {
+		$(".list-body").css("display", "none");
+		$(".total-panel").css("display", "none");
+		$(".empty-box").css("display", "block");
+		$(".like-goods").css("display", "none");
+	} else {
+		$(".list-body").css("display", "block");
+		$(".total-panel").css("display", "block");
+		$(".empty-box").css("display", "none");
+		$(".like-goods").css("display", "block");
 	}
-	
+
 </script>
+
 </html>

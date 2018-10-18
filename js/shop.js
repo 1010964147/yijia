@@ -27,7 +27,7 @@ var index_js = (function(){
                             </li>
                             <li class="price">
                                 <div>
-                                    <p>¥ ${data[i].price}</p>
+                                    <p>¥ <i>${data[i].price}</i></p>
 
                                 </div>
                             </li>
@@ -43,7 +43,7 @@ var index_js = (function(){
                                     </span>
                                 </span>
                             </li>
-                            <li class="total-price">¥ ${data[i].price*data[i].count}</li>
+                            <li class="total-price">¥ <i>${data[i].price*data[i].count}</i></li>
                             <li class="delete-goods">
                                 <span class="delete-btn"></span>
                             </li>
